@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Kartheek Puchakayala</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-container">
+    <div class="logo">KP</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section fade-in">
+    <div class="container">
+      <h1>Projects</h1>
+      <p class="subtitle">A selection of systems and tools I've built or led.</p>
+
+      <div class="grid-2">
+        <div class="card project-card">
+          <h3>ARLM — Application Release Lifecycle Management</h3>
+          <p>
+            Internal tool to automate Java product installations and deployments across WebSphere and JBoss,
+            integrating Liquibase for database changes.
+          </p>
+          <ul>
+            <li>Automated container and DB management with Ant, shell scripts, XML, and Java.</li>
+            <li>Reduced manual deployment effort and improved release consistency.</li>
+          </ul>
+        </div>
+
+        <div class="card project-card">
+          <h3>SIT — Security Integration Tool</h3>
+          <p>
+            Organization‑wide tool to validate vulnerabilities across security scanners and create Jira issues
+            automatically.
+          </p>
+          <ul>
+            <li>Integrated Black Duck, Jira REST API, Salesforce, and CVSS analysis.</li>
+            <li>Provided UI using Bootstrap, jQuery, and Angular.</li>
+          </ul>
+        </div>
+
+        <div class="card project-card">
+          <h3>Banking Money Movement Services</h3>
+          <p>
+            Microservices for ACH transfers, Zelle payments, and bill pay integrations with Fiserv and FIS on NCR D3.
+          </p>
+          <ul>
+            <li>Spring Boot, Spring Cloud, Spring Security, Spring Batch, JPA.</li>
+            <li>High‑coverage unit tests (90%+) with JUnit and Mockito.</li>
+          </ul>
+        </div>
+
+        <div class="card project-card">
+          <h3>Cloud Cost Optimization for MetLife</h3>
+          <p>
+            Azure environment optimization that reduced lower‑region infrastructure costs by 40% while maintaining
+            availability.
+          </p>
+          <ul>
+            <li>Usage‑driven configuration changes and automated pipelines.</li>
+            <li>AppDynamics integration for performance monitoring.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p>© 2026 Kartheek Puchakayala</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
