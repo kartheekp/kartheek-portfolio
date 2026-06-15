@@ -1,96 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kartheek Puchakayala | Lead Software Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kartheek Puchakayala | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(15, 23, 42, 0.9);
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+nav a {
+    margin: 0 15px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #facc15;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero h1 {
+    font-size: 3rem;
+}
+.hero p {
+    margin: 15px 0;
+    color: #cbd5f5;
+}
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.section h2 {
+    margin-bottom: 20px;
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+}
+
+/* CARD */
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #334155;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* TIMELINE */
+.timeline {
+    border-left: 3px solid #38bdf8;
+    padding-left: 20px;
+}
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+
+@media(max-width:768px){
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+</style>
 </head>
+
 <body>
-<header class="site-header">
-  <div class="container nav-container">
-    <div class="logo">KP</div>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
 
-<main>
-  <section class="hero fade-in">
-    <div class="container">
-      <h1>Hi, I'm <span class="accent">Kartheek Puchakayala</span></h1>
-      <p class="subtitle">
-        Lead Software Engineer specializing in Java, microservices, cloud, and application security.
-      </p>
-      <p>
-        15+ years building enterprise systems in banking, payments, and insurance—designing resilient
-        microservices, leading releases, and automating everything I can.
-      </p>
-      <div class="hero-actions">
-        <a href="projects.html" class="btn primary">View Projects</a>
-        <a href="contact.html" class="btn ghost">Contact Me</a>
-      </div>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+</nav>
+
+<section class="hero">
+    <h1>Kartheek Puchakayala</h1>
+    <p>Lead Software Engineer | Microservices | Cloud Architect</p>
+    <p>📍 Elkhorn, NE | 📧 Kartheek.puchakayala@gmail.com</p>
+    <button class="btn" onclick="window.location.href='mailto:Kartheek.puchakayala@gmail.com'eveloper with 15+ years of experience in enterprise systems, microservices,
+            and cloud platforms. Proven expertise in Java, Spring Boot, Azure, AWS, and CI/CD pipelines.
+            Strong domain knowledge in banking, payments, and financial systems.
+        </p>
     </div>
-  </section>
+</section>
 
-  <section class="section fade-in">
-    <div class="container">
-      <h2>Core Skills</h2>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Backend & Microservices</h3>
-          <p>Java, J2EE, Spring Boot, Spring Cloud, Spring Security, Spring Batch, JPA, Hibernate, REST APIs.</p>
-        </div>
-        <div class="card">
-          <h3>Cloud & DevOps</h3>
-          <p>Azure, AWS, AKS, Istio (mTLS), Docker, Azure DevOps, GitHub Actions, CI/CD pipelines.</p>
-        </div>
-        <div class="card">
-          <h3>Security & Fintech</h3>
-          <p>AppSec tooling (Black Duck, Veracode, Checkmarx), ACH, Zelle, bill pay, money movement systems.</p>
-        </div>
-      </div>
+<section class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>Microservices</span>
+        <span>Azure</span>
+        <span>AWS</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>CI/CD</span>
+        <span>REST APIs</span>
+        <span>AngularJS</span>
+        <span>SQL</span>
+        <span>GitHub Actions</span>
     </div>
-  </section>
+</section>
 
-  <section class="section fade-in">
-    <div class="container">
-      <h2>Experience Snapshot</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Lead Software Engineer — Capgemini (MetLife)</h3>
-          <span class="time">2022 – Present</span>
-          <p>Leading microservices and Azure‑based solutions, cutting cloud costs by 40% and managing secure releases.</p>
+<section class="section" id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+
+        <div class="timeline-item card">
+            <h3>Lead Software Engineer - Capgemini (MetLife)</h3>
+            <p>2022 - Present</p>
+            <ul>
+                <li>Led Agile sprints and major enterprise releases</li>
+                <li>Reduced cloud cost by 40% using Azure optimizations</li>
+                <li>Implemented CI/CD pipelines and AKS deployments</li>
+            </ul>
         </div>
-        <div class="timeline-item">
-          <h3>Senior Java Developer — NCR Corp</h3>
-          <span class="time">2021 – 2022</span>
-          <p>Built banking integrations (Zelle, ACH, bill pay) and high‑coverage microservices on AWS.</p>
+
+        <div class="timeline-item card">
+            <h3>Senior Java Developer - NCR Corp</h3>
+            <p>2021 - 2022</p>
+            <ul>
+                <li>Developed microservices using Spring Boot</li>
+                <li>Integrated Zelle and ACH payment systems</li>
+                <li>Managed AWS deployments and Docker containers</li>
+            </ul>
         </div>
-        <div class="timeline-item">
-          <h3>Software Engineer — ACI Worldwide</h3>
-          <span class="time">2015 – 2021</span>
-          <p>Created internal tools for release automation and security integration across the organization.</p>
+
+        <div class="timeline-item card">
+            <h3>Software Engineer - ACI Worldwide</h3>
+            <p>2015 - 2021</p>
+            <ul>
+                <li>Built release automation tools</li>
+                <li>Developed security integration platform</li>
+                <li>Worked on WebSphere and middleware systems</li>
+            </ul>
         </div>
-      </div>
+
     </div>
-  </section>
-</main>
+</section>
 
-<footer class="site-footer">
-  <div class="container footer-content">
+<section class="section" id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <p><strong>MS Computer Science</strong> – University of Nebraska Omaha (2015)</p>
+        <p><strong>B.Tech Computer Science</strong> – JNTU Hyderabad (2010)</p>
+    </div>
+</section>
+
+<footer>
     <p>© 2026 Kartheek Puchakayala</p>
-    <p>
-      Elkhorn, NE •
-      <a href="mailto:Kartheek.puchakayala@gmail.com">Kartheek.puchakayala@gmail.com</a>
-    </p>
-  </div>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
